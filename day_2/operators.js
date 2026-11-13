@@ -1,4 +1,3 @@
-
 //       ARITHMETIC OPERATORS IN JS
 
 // Arithmetic operators are used to perform mathematical
@@ -52,7 +51,7 @@ console.log(++p); // 6
 // Returns the current value first, then increments.
 let q = 5;
 console.log(q++); // 5
-console.log(q);   // 6
+console.log(q); // 6
 
 // 11. PRE-DECREMENT (--x)
 // Decrements first, then returns the updated value.
@@ -63,8 +62,7 @@ console.log(--r); // 4
 // Returns the current value first, then decrements.
 let s = 5;
 console.log(s--); // 5
-console.log(s);   // 4
-
+console.log(s); // 4
 
 //       IMPORTANT DSA NUMBER TRICKS
 
@@ -86,11 +84,10 @@ console.log(Math.floor(num / 10)); // 1234
 let n = 12345;
 
 while (n > 0) {
-    let digit = n % 10;       // Extract last digit
-    console.log(digit);       // Print digit
-    n = Math.floor(n / 10);   // Remove last digit
+  let digit = n % 10; // Extract last digit
+  console.log(digit); // Print digit
+  n = Math.floor(n / 10); // Remove last digit
 }
-
 
 // 4. COUNT THE NUMBER OF DIGITS
 
@@ -98,8 +95,8 @@ let number = 12345;
 let count = 0;
 
 while (number > 0) {
-    count++;
-    number = Math.floor(number / 10);
+  count++;
+  number = Math.floor(number / 10);
 }
 
 console.log(count); // 5
@@ -110,9 +107,9 @@ let value = 12345;
 let sum = 0;
 
 while (value > 0) {
-    let digit = value % 10;
-    sum += digit;
-    value = Math.floor(value / 10);
+  let digit = value % 10;
+  sum += digit;
+  value = Math.floor(value / 10);
 }
 
 console.log(sum); // 15
@@ -123,13 +120,90 @@ let original = 12345;
 let reverse = 0;
 
 while (original > 0) {
-    let digit = original % 10;
-    reverse = reverse * 10 + digit;
-    original = Math.floor(original / 10);
+  let digit = original % 10;
+  reverse = reverse * 10 + digit;
+  original = Math.floor(original / 10);
 }
 
 console.log(reverse); // 54321
 
+//       COMPARISON OPERATORS IN JS
+
+// Comparison operators compare two values.
+// They always return a Boolean: true or false.
+
+// 1. EQUAL TO (==)
+// Compares two values after performing type coercion if needed.
+// It does NOT strictly check the data type.
+
+console.log(10 == 10); // true
+console.log(10 == "10"); // true (string converted to number)
+
+// 2. STRICT EQUAL TO (===)
+// Compares both value AND data type.
+// Does NOT perform type coercion.
+
+console.log(10 === 10); // true
+console.log(10 === "10"); // false (number !== string)
+
+// 3. NOT EQUAL TO (!=)
+// Checks whether two values are different.
+// Performs type coercion if needed.
+
+console.log(10 != 20); // true
+console.log(10 != "10"); // false
+
+// 4. STRICT NOT EQUAL TO (!==)
+// Checks whether values OR their data types are different.
+// Does NOT perform type coercion.
+
+console.log(10 !== 20); // true
+console.log(10 !== "10"); // true (different data types)
+
+// 5. GREATER THAN (>)
+// Checks whether LHS is greater than RHS.
+
+console.log(20 > 10); // true
+console.log(10 > 20); // false
+
+// 6. LESS THAN (<)
+// Checks whether LHS is smaller than RHS.
+
+console.log(10 < 20); // true
+console.log(20 < 10); // false
+
+// 7. GREATER THAN OR EQUAL TO (>=)
+// Checks whether LHS is greater than OR equal to RHS.
+
+console.log(20 >= 10); // true
+console.log(10 >= 10); // true
+console.log(5 >= 10); // false
+
+// 8. LESS THAN OR EQUAL TO (<=)
+// Checks whether LHS is smaller than OR equal to RHS.
+
+console.log(10 <= 20); // true
+console.log(10 <= 10); // true
+console.log(20 <= 10); // false
+
+//              QUICK REMEMBER
+
+// ==   -> Equal (allows type coercion)
+// ===  -> Strict equal (value + data type)
+// !=   -> Not equal (allows type coercion)
+// !==  -> Strict not equal (value + data type)
+// >    -> Greater than
+// <    -> Less than
+// >=   -> Greater than or equal to
+// <=   -> Less than or equal to
+
+//          IMPORTANT BEST PRACTICE
+
+// Prefer === and !== in modern JavaScript.
+// They avoid unexpected results caused by type coercion.
+
+console.log(5 == "5"); // true
+console.log(5 === "5"); // false
 
 // QUICK REMEMBER
 
