@@ -186,16 +186,6 @@ console.log(10 <= 20); // true
 console.log(10 <= 10); // true
 console.log(20 <= 10); // false
 
-//              QUICK REMEMBER
-
-// ==   -> Equal (allows type coercion)
-// ===  -> Strict equal (value + data type)
-// !=   -> Not equal (allows type coercion)
-// !==  -> Strict not equal (value + data type)
-// >    -> Greater than
-// <    -> Less than
-// >=   -> Greater than or equal to
-// <=   -> Less than or equal to
 
 //          IMPORTANT BEST PRACTICE
 
@@ -214,3 +204,14 @@ console.log(5 === "5"); // false
 // num ** 3               -> Cube a number
 // x++                    -> Use first, increment later
 // ++x                    -> Increment first, use later
+
+//              QUICK REMEMBER
+
+// ==   -> Equal (allows type coercion)
+// ===  -> Strict equal (value + data type)
+// !=   -> Not equal (allows type coercion)
+// !==  -> Strict not equal (value + data type)
+// >    -> Greater than
+// <    -> Less than
+// >=   -> Greater than or equal to
+// <=   -> Less than or equal to
